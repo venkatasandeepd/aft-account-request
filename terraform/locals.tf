@@ -34,11 +34,11 @@ locals {
     ##################################################################
 
     production = {
-      name              = "Staging Account"
+      name              = "Production Account"
       organization_unit = "Product"
-      email             = local.email_secrets["staging_account_email"]
+      email             = local.email_secrets["production_account_email"]
       sso_email         = local.sso_user_email
-      first_name        = "Staging"
+      first_name        = "Production"
       last_name         = "User"
       tags = {
         "ABC:Environment" = "PROD"
